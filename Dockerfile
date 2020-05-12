@@ -6,5 +6,4 @@ WORKDIR /usr/src/java
 RUN mvn package
 EXPOSE 8080
 WORKDIR /usr/src/java/target
-CMD java -jar java*
-
+CMD java -jar *.jar
