@@ -5,6 +5,6 @@ RUN git clone https://github.com/ArtemOnishchuk/java.git
 WORKDIR /usr/src/java
 RUN mvn package
 EXPOSE 8080
-WORKDIR /usr/src/graph/java
-CMD java -jar graph*
+WORKDIR /usr/src/java/target
+CMD java -jar java*
 
